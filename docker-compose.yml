@@ -3,7 +3,7 @@ version: '3.8'
 services:
   portfolio:
     build: .
-    container_name: ashwath_portfolio
+    container_name: ramesh_portfolio
     ports:
-      - "5632:5632"
+      - "80:80"
     restart: always

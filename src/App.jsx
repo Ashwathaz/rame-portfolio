@@ -6,7 +6,7 @@ import {
   Trophy, Crosshair, Target, Sword, Mountain, Disc, Instagram, Camera
 } from 'lucide-react';
 import './index.css';
-import resumePdf from './assets/Ashwath_Ram_Resume.pdf';
+import resumePdf from './assets/Ramesh_Khanna_Resume.pdf';
 import NetworkBg from './NetworkBg';
 import CurvyLinesBg from './CurvyLinesBg';
 
@@ -23,24 +23,23 @@ function App() {
   };
 
   const skills = [
+    { name: 'Tech Problem Solving', icon: <Terminal size={20} /> },
+    { name: 'Zendesk', icon: <Activity size={20} /> },
+    { name: 'Analytical Thinking', icon: <Activity size={20} /> },
+    { name: 'Figma', icon: <Code size={20} /> },
+    { name: 'AutoCAD & SolidWorks', icon: <Box size={20} /> },
+    { name: '3D Model Simulation', icon: <Box size={20} /> },
+    { name: 'Product Lifecycle', icon: <Zap size={20} /> },
+    { name: 'User Journey Mapping', icon: <Database size={20} /> },
+    { name: 'EHR & AMD', icon: <Cpu size={20} /> },
+    { name: 'Client Support', icon: <Target size={20} /> },
     { name: 'AWS', icon: <Cloud size={20} /> },
-    { name: 'Jenkins', icon: <Activity size={20} /> },
-    { name: 'Docker', icon: <Box size={20} /> },
-    { name: 'Terraform', icon: <Zap size={20} /> },
-    { name: 'Linux', icon: <Terminal size={20} /> },
-    { name: 'Python', icon: <Code size={20} /> },
-    { name: 'MySQL', icon: <Database size={20} /> },
-    { name: 'GCP (Basics)', icon: <Cloud size={20} /> },
-    { name: 'Azure (Basics)', icon: <Cloud size={20} /> },
-    { name: 'AI', icon: <Cpu size={20} /> },
-    { name: 'Grafana', icon: <Activity size={20} /> },
-    { name: 'Git', icon: <Github size={20} /> },
-    { name: 'Kubernetes', icon: <Ship size={20} /> }
+    { name: 'Cloud', icon: <Cloud size={20} /> }
   ];
 
   const personalInterests = {
     gaming: [
-      { name: 'Valorant', rank: 'Diamond 1', icon: <Crosshair size={24} />, desc: 'Tactical precision and team coordination.' },
+      { name: 'Valorant', rank: 'Diamond 2', icon: <Crosshair size={24} />, desc: 'Tactical precision and team coordination.' },
       { name: 'RDR2', rank: 'Story Explorer', icon: <Mountain size={24} />, desc: 'A breathtaking masterpiece of storytelling.' },
       { name: 'God of War', rank: 'Axe Master', icon: <Sword size={24} />, desc: 'Epic battles and powerful emotions.' },
       { name: 'Ghost of Tsushima', rank: 'Legendary Samurai', icon: <Sword size={24} />, desc: 'The way of the ghost in a beautiful world.' },
@@ -48,73 +47,44 @@ function App() {
       { name: 'GoW Ragnarok', rank: 'Path to Valhalla', icon: <Sword size={24} />, desc: 'The conclusion of a legendary saga.' },
       { name: 'God of War III', rank: 'Spartan Rage', icon: <Sword size={24} />, desc: 'The ultimate revenge of Kratos.' },
       { name: 'GTA 5', rank: 'Los Santos Kingpin', icon: <Target size={24} />, desc: 'Heists, cars, and endless chaos.' },
-      { name: 'BGMI', rank: '1x Conqueror', icon: <Target size={24} />, desc: 'Surviving till the end for the chicken dinner.' },
+      { name: 'Elden Ring', rank: 'Elden Lord', icon: <Sword size={24} />, desc: 'A majestic and challenging journey through the Lands Between.' },
     ],
     sports: [
       { name: 'Chess', rank: 'Strategic Thinker', icon: <Trophy size={24} /> },
-      { name: 'Tennis', rank: 'Volley Player', desc: 'Push to finish', icon: <Disc size={24} /> },
+      { name: 'Handball', rank: 'Dynamic Player', desc: 'Fast-paced action and court control', icon: <Activity size={24} /> },
     ],
     foodie: [
       { name: 'Chicken Biryani', icon: '🍗', type: 'The King of Meals' },
       { name: 'Chicken Fried Rice', icon: '🍚', type: 'Comfort in Every Bite' },
       { name: 'Samosa', icon: '🥟', type: 'The Perfect Snack' },
       { name: 'Rose Milk', icon: '🥛', type: 'Refreshing Sweetness' },
-      { name: 'Tea', icon: '☕', type: 'Spiced & Strong' },
-      { name: 'Coffee', icon: '☕', type: 'Morning Fuel' },
+      { name: 'Sundae', icon: '🍨', type: 'Sweet Delight' },
+      { name: 'Milkshake', icon: '🥤', type: 'Thick & Creamy' },
+      { name: 'French Fries', icon: '🍟', type: 'Crispy & Golden' },
       { name: 'Chicken 65', icon: '🔥', type: 'Spicy & Crispy' },
       { name: 'Grill Chicken', icon: '🍖', type: 'Smoky Goodness' },
     ],
     ambitions: [
-      { name: 'Indian Army', icon: <Award size={24} />, desc: 'SERVE WITH HONOR' },
-      { name: 'Gaming Cafe', icon: <Gamepad2 size={24} />, desc: 'Vision to build a hub for local esports.' },
+      { name: 'Esports Cafe', icon: <Gamepad2 size={24} />, desc: 'Vision to build a hub for local esports.' },
+      { name: 'Coach', icon: <Crosshair size={24} />, desc: 'Guiding and mentoring players to victory.' },
+      { name: 'Entrepreneur', icon: <Briefcase size={24} />, desc: 'Building innovative and successful businesses.' },
     ]
   };
 
   const projects = [
     {
-      title: 'ECOMMERCE WEBSITE FOR GAMING ACCESSORIES',
-      date: 'Jan 2024 - May 2024',
-      image: '/project3.png',
-      tags: ['React', 'CSS3', 'JavaScript'], // Kept in data but will not render
-      points: [
-        'Efficient product search and categorization system for gaming gear',
-        'Interactive UI components with smooth gaming-inspired animations',
-        'High-performance shopping cart with real-time inventory updates',
-        'Integrated secure payment gateway simulation for seamless checkout',
-        'User-centric dark theme optimized for long-session gaming enthusiasts',
-        'Responsive layout ensuring compatibility across all device sizes'
-      ],
-      link: 'https://strixstore.duckdns.org/'
-    },
-    {
-      title: 'AI Resume & ATS Analyzer',
-      date: 'Nov 2025 - Present',
+      title: 'Biomedical Implants: 3D Printed Titanium Alloy',
+      date: 'Jun 2017 - Oct 2021',
       image: '/project1.png',
-      tags: ['Python', 'Streamlit', 'NLP', 'Docker'],
+      tags: ['Mechanical Engineering', '3D Printing', 'Nanotubes'], // Kept in data but will not render
       points: [
-        'Core NLP algorithms for deep resume parsing and analysis',
-        'Intelligent ATS score calculation based on job descriptions',
-        'Personalized skill gap analysis with improvement recommendations',
-        'Production-ready Docker environment for scalable deployment',
-        'Intuitive data visualization for resume performance metrics',
-        'Automated feedback generation for optimal resume tailoring'
+        'Design and development of 3D printed polyamide titanium alloy',
+        'Integration of multi-walled carbon nanotubes for advanced mechanical strength',
+        'Focused on biomedical applications and creating durable implants',
+        'Extensive materials testing and mechanical property evaluation',
+        'Cross-disciplinary academic thesis combining engineering and biomedical sciences'
       ],
-      link: 'https://ai-resume-analyzer.duckdns.org/'
-    },
-    {
-      title: 'Sathyabama AI Chatbot',
-      date: 'Jul 2025 - Aug 2025',
-      image: '/project2.png',
-      tags: ['Python', 'Flask', 'Google Gemini'],
-      points: [
-        'Large Language Model integration via Google Gemini Pro API',
-        'Real-time academic inquiry handling for university students',
-        'Multi-turn conversation management for complex user queries',
-        'Context-aware response generation with university-specific data',
-        'Modern, glassmorphism-based UI for enhanced user engagement',
-        'Optimized backend architecture for low-latency response delivery'
-      ],
-      link: 'https://sist-chatbot.duckdns.org/'
+      link: ''
     }
   ];
 
@@ -131,14 +101,14 @@ function App() {
         <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '100%', maxWidth: 'none', padding: 0 }}>
           <div className="brand">
             <Zap size={24} fill="var(--accent-color)" style={{ color: 'var(--accent-color)', filter: 'drop-shadow(0 0 10px var(--accent-glow))' }} />
-            {theme === 'devops' ? 'ASHWATH RAM' : 'ASHZ ⚡ ZEUS'}
+            {theme === 'devops' ? 'R Ramesh Khanna' : 'RAME'}
           </div>
 
           <div className="theme-switch-container">
-            <span className={`theme-label ${theme === 'devops' ? 'active' : ''}`}>DevOps</span>
+            <span className={`theme-label ${theme === 'devops' ? 'active' : ''}`}>Professional</span>
             <button className="theme-toggle" onClick={toggleTheme} aria-label="Toggle Theme">
               <div className="toggle-knob">
-                {theme === 'devops' ? <Terminal size={12} /> : <BookOpen size={12} />}
+                {theme === 'devops' ? <Briefcase size={12} /> : <BookOpen size={12} />}
               </div>
             </button>
             <span className={`theme-label ${theme === 'personal' ? 'active' : ''}`}>Personal</span>
@@ -154,14 +124,14 @@ function App() {
               {theme === 'devops' ? (
                 <>
                   <div className="hero-badge">
-                    <Zap size={14} /> Available for DevOps Roles
+                    <Zap size={14} /> Available for Support and Cloud Roles
                   </div>
                   <h1>
-                    Cloud Engineer | <span className="gradient-text">DevOps</span> Enthusiast
+                    Technical Support <span className="gradient-text">Associate</span>
                   </h1>
                   <p>
-                    Cloud and DevOps enthusiast focused on AWS infrastructure and containerized applications. 
-                    Currently exploring automation tools and gaining experience with GCP and Azure environments.
+                    Passionate, motivated, and client-focused technical support specialist.
+                    Proven track record of successfully addressing complex technical issues while providing excellent customer service.
                   </p>
                 </>
               ) : (
@@ -170,7 +140,7 @@ function App() {
                     <BookOpen size={14} /> Personal Blog & Hobbies
                   </div>
                   <h1>
-                    Beyond the <span className="gradient-text">code</span>, I explore
+                    Beyond the <span className="gradient-text">Support Role</span>, I explore
                   </h1>
                   <p>
                     Passionate gamer, sports enthusiast, and life explorer.
@@ -182,13 +152,13 @@ function App() {
 
               <div className="btn-group">
                 {theme === 'devops' && (
-                  <a href={resumePdf} download="Ashwath_Ram_Resume.pdf" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+                  <a href={resumePdf} download="Ramesh_Khanna_Resume.pdf" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
                     <Download size={20} /> Download Resume
                   </a>
                 )}
-                <a href={theme === 'devops' ? "mailto:ashwathaz@zohomail.in" : "https://instagram.com/ig._ashz"} target={theme === 'devops' ? undefined : "_blank"} rel="noopener noreferrer" className="btn btn-secondary">
+                <a href={theme === 'devops' ? "mailto:rameshkhanna06.r@gmail.com" : "https://www.instagram.com/relaxed_rafaa?igsh=MWl4djZ1cGN5cDd1aQ=="} target={theme === 'devops' ? undefined : "_blank"} rel="noopener noreferrer" className="btn btn-secondary">
                   {theme === 'devops' ? <Mail size={20} /> : <Instagram size={20} />}
-                  {theme === 'devops' ? "Get in Touch" : "Follow @ig._ashz"}
+                  {theme === 'devops' ? "Get in Touch" : "Follow @relaxed_rafaa"}
                 </a>
               </div>
 
@@ -196,24 +166,20 @@ function App() {
                 {theme === 'devops' ? (
                   <>
                     <div className="stat-item">
-                      <h3>3</h3>
-                      <p>Cloud Platforms</p>
+                      <h3>4+</h3>
+                      <p>Years Experience</p>
                     </div>
                     <div className="stat-item">
-                      <h3>4</h3>
-                      <p>Active Projects</p>
+                      <h3>5</h3>
+                      <p>Companies</p>
                     </div>
 
                   </>
                 ) : (
                   <>
                     <div className="stat-item">
-                      <h3>D1</h3>
+                      <h3>D2</h3>
                       <p>Valo Rank</p>
-                    </div>
-                    <div className="stat-item">
-                      <h3>1x</h3>
-                      <p>BGMI Conqueror</p>
                     </div>
                     <div className="stat-item">
                       <h3>∞</h3>
@@ -224,17 +190,19 @@ function App() {
               </div>
             </div>
 
-            <div className="hero-visual">
-              <div className="image-wrapper">
-                <div className="image-bg"></div>
-                <img
-                  src={theme === 'devops' ? "/profile.jpg" : "/personal.jpg"}
-                  alt="Ashwath Ram"
-                  className="hero-image"
-                  key={theme} // Trigger animation on theme change
-                />
+            {theme === 'devops' && (
+              <div className="hero-visual">
+                <div className="image-wrapper">
+                  <div className="image-bg"></div>
+                  <img
+                    src="/profile.jpg"
+                    alt="Ramesh Khanna"
+                    className="hero-image"
+                    key={theme} // Trigger animation on theme change
+                  />
+                </div>
               </div>
-            </div>
+            )}
           </section>
 
           {theme === 'devops' ? (
@@ -249,19 +217,34 @@ function App() {
                   <div className="card">
                     <div className="timeline-item">
                       <div className="timeline-dot"></div>
-                      <span className="timeline-tag">Dec 2024 - Present</span>
-                      <h3>ARCHON Platform 3 Solutions</h3>
-                      <h4 style={{ color: 'var(--accent-color)', marginBottom: '1rem' }}>DevOps Intern</h4>
-                      <ul style={{ listStyle: 'none' }}>
-                        <li style={{ display: 'flex', gap: '0.5rem', alignItems: 'start', color: 'var(--text-muted)' }}>
-                          <ChevronRight size={18} style={{ color: 'var(--accent-color)', flexShrink: 0 }} />
-                          <span>Learning Docker, Terraform, CI/CD automation, and deployments.</span>
-                        </li>
-                        <li style={{ display: 'flex', gap: '0.5rem', alignItems: 'start', color: 'var(--text-muted)', marginTop: '0.5rem' }}>
-                          <ChevronRight size={18} style={{ color: 'var(--accent-color)', flexShrink: 0 }} />
-                          <span>Learning Linux operations and system monitoring with Grafana.</span>
-                        </li>
-                      </ul>
+                      <span className="timeline-tag">Oct 2024 - Present</span>
+                      <h3>Technosoft</h3>
+                      <h4 style={{ color: 'var(--accent-color)', marginBottom: '1rem' }}>Tech Support (AMD & EHR)</h4>
+                    </div>
+                    <div className="timeline-item" style={{ marginTop: '1.5rem' }}>
+                      <div className="timeline-dot"></div>
+                      <span className="timeline-tag">Sep 2023 - Jun 2024</span>
+                      <h3>Foundever</h3>
+                      <h4 style={{ color: 'var(--accent-color)', marginBottom: '0.5rem' }}>Tech Support (Hylan WiFi Communication)</h4>
+                      <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem' }}>🏆 Awarded as the best agent at global level for the chat process and presented with a certificate.</p>
+                    </div>
+                    <div className="timeline-item" style={{ marginTop: '1.5rem' }}>
+                      <div className="timeline-dot"></div>
+                      <span className="timeline-tag">Jul 2022 - Jun 2023</span>
+                      <h3>TVS</h3>
+                      <h4 style={{ color: 'var(--accent-color)', marginBottom: '1rem' }}>Apprentice Trainer</h4>
+                    </div>
+                    <div className="timeline-item" style={{ marginTop: '1.5rem' }}>
+                      <div className="timeline-dot"></div>
+                      <span className="timeline-tag">Apr 2022 - Jun 2022</span>
+                      <h3>BYJU'S</h3>
+                      <h4 style={{ color: 'var(--accent-color)', marginBottom: '1rem' }}>Business Development Executive (BDE)</h4>
+                    </div>
+                    <div className="timeline-item" style={{ marginTop: '1.5rem' }}>
+                      <div className="timeline-dot"></div>
+                      <span className="timeline-tag">Oct 2021 - Apr 2022</span>
+                      <h3>Sutherland</h3>
+                      <h4 style={{ color: 'var(--accent-color)', marginBottom: '1rem' }}>Associate Support</h4>
                     </div>
                   </div>
                 </div>
@@ -274,17 +257,11 @@ function App() {
                       <Award size={24} style={{ color: 'var(--accent-color)', marginBottom: '1rem' }} />
                       <h2 className="section-title" style={{ fontSize: '1.5rem' }}>Education</h2>
                     </div>
-                    <div className="timeline-item" style={{ marginBottom: '2rem' }}>
-                      <div className="timeline-dot"></div>
-                      <span className="timeline-tag">2024 - Present</span>
-                      <h3>Masters in Computer Applications</h3>
-                      <p style={{ color: 'var(--text-muted)' }}>Sathyabama University | CGPA: 6.50</p>
-                    </div>
                     <div className="timeline-item">
                       <div className="timeline-dot"></div>
-                      <span className="timeline-tag">2020 - 2024</span>
-                      <h3>B.Sc Computer Science</h3>
-                      <p style={{ color: 'var(--text-muted)' }}>Vels University | CGPA: 7.52</p>
+                      <span className="timeline-tag">Jun 2017 - Oct 2021</span>
+                      <h3>B.Tech Mechanical Engineering</h3>
+                      <p style={{ color: 'var(--text-muted)' }}>Pondicherry University | CGPA: 8.62</p>
                     </div>
                   </div>
 
@@ -294,15 +271,15 @@ function App() {
                       <h2 className="section-title" style={{ fontSize: '1.5rem' }}>Architecture Philosophy</h2>
                     </div>
                     <p style={{ color: 'var(--text-muted)', fontSize: '1.1rem', lineHeight: '1.8' }}>
-                      "Infrastructure as Code is not just a practice, it's a mindset.
-                      Efficiency is born from automation, and reliability is built on layers of validation."
+                      "Support is not just about resolving tickets, it's about empowering users.
+                      Efficiency is born from clear communication, and reliability is built on consistent problem-solving."
                     </p>
                     <div style={{ marginTop: '2rem', display: 'flex', gap: '1rem' }}>
                       <div className="skill-card" style={{ padding: '0.75rem 1.25rem' }}>
-                        <Cloud size={18} /> Cloud Scalability
+                        <Target size={18} /> Problem Solving
                       </div>
                       <div className="skill-card" style={{ padding: '0.75rem 1.25rem' }}>
-                        <Zap size={18} /> Automation Foundations
+                        <Activity size={18} /> Active Support
                       </div>
                     </div>
                   </div>
@@ -314,7 +291,7 @@ function App() {
                   <span className="section-label">Portfolio</span>
                   <h2 className="section-title">Technical Projects</h2>
                   <p style={{ marginTop: '1rem', color: 'var(--text-muted)' }}>
-                    Each of these projects is fully containerized using Docker to ensure portable and production-ready deployments.
+                    Here is my featured academic research project.
                   </p>
                 </div>
                 <div className="carousel-container" style={{ position: 'relative', width: '100%', height: '850px', display: 'flex', justifyContent: 'center', alignItems: 'center', perspective: '1500px' }}>
@@ -454,7 +431,7 @@ function App() {
                   <span className="section-label">Moments</span>
                   <h2 className="section-title">Life Captured</h2>
                   <p style={{ marginTop: '1rem' }}>
-                    A glimpse into my adventures. Follow me on <a href="https://instagram.com/ig._ashz" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--accent-color)', textDecoration: 'none', fontWeight: 'bold' }}>@ig._ashz <Instagram size={14} style={{ display: 'inline', verticalAlign: 'middle', marginTop: '-2px' }} /></a>
+                    A glimpse into my adventures. Follow me on <a href="https://www.instagram.com/relaxed_rafaa?igsh=MWl4djZ1cGN5cDd1aQ==" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--accent-color)', textDecoration: 'none', fontWeight: 'bold' }}>@relaxed_rafaa <Instagram size={14} style={{ display: 'inline', verticalAlign: 'middle', marginTop: '-2px' }} /></a>
                   </p>
                 </div>
 
@@ -475,18 +452,6 @@ function App() {
                     <p style={{ color: 'var(--text-muted)' }}>From everyday routines to extraordinary experiences, documented and shared.</p>
                   </div>
                 </div>
-
-                <div className="grid grid-cols-3" style={{ gap: '1.5rem' }}>
-                  <div style={{ borderRadius: '12px', overflow: 'hidden', height: '350px' }}>
-                    <img src="/ashz1.jpg" alt="Gallery 1" style={{ width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 0.3s ease' }} className="hover-zoom" />
-                  </div>
-                  <div style={{ borderRadius: '12px', overflow: 'hidden', height: '350px' }}>
-                    <img src="/ashz2.jpg" alt="Gallery 2" style={{ width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 0.3s ease' }} className="hover-zoom" />
-                  </div>
-                  <div style={{ borderRadius: '12px', overflow: 'hidden', height: '350px' }}>
-                    <img src="/ashz3.jpg" alt="Gallery 3" style={{ width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 0.3s ease' }} className="hover-zoom" />
-                  </div>
-                </div>
               </section>
             </>
           )}
@@ -494,13 +459,10 @@ function App() {
 
         <footer>
           <div className="footer-socials">
-            <a href="https://www.linkedin.com/in/ashz3003/" target="_blank" rel="noopener noreferrer" className="social-link">
+            <a href="https://www.linkedin.com/in/rameshkhannar/" target="_blank" rel="noopener noreferrer" className="social-link">
               <Linkedin size={28} />
             </a>
-            <a href="https://github.com/Ashwathaz" target="_blank" rel="noopener noreferrer" className="social-link">
-              <Github size={28} />
-            </a>
-            <a href="mailto:ashwathaz@zohomail.in" className="social-link">
+            <a href="mailto:rameshkhanna06.r@gmail.com" className="social-link">
               <Mail size={28} />
             </a>
           </div>

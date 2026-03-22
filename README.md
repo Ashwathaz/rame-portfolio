@@ -1,21 +1,21 @@
-# Ashwath Ram - Personal Portfolio
+# R Ramesh Khanna - Personal & Professional Portfolio
 
-A dynamic, dual-themed personal and professional portfolio built with React and Vite. It features a sleek "DevOps" dark mode for professional experience and a "Personal" light mode for hobbies, gaming, and photography.
+A dynamic, dual-themed portfolio built with React and Vite. It features a sleek "Professional" mode highlighting experience as a Technical Support Associate and a "Personal" mode dedicated to hobbies, gaming, and lifestyle.
 
 ## 🚀 Features
 
-- **Dual-Theme Design**: Toggle seamlessly between a Professional DevOps profile (Dark Mode) and a Personal space (Light Mode).
-- **Interactive UI**: Responsive layouts, CSS animations, and smooth transitions.
-- **Project Showcase**: Display of technical projects, certifications, and skills.
-- **Personal Gallery**: A life-captured photo gallery linked to Instagram.
-- **Gaming & Hobbies**: Track gaming milestones and personal interests.
+- **Dual-Theme Design**: Toggle seamlessly between a Professional profile and a Personal space.
+- **Interactive UI**: Responsive layouts, custom CSS animations, and smooth transitions.
+- **Professional Showcase**: Display of technical support experience, skills (AWS, Cloud, Problem Solving), and projects.
+- **Personal Gallery**: A life-captured image layout linked to Instagram.
+- **Gaming & Hobbies**: Track epic gaming milestones (Valorant, Elden Ring) and personal interests like favorite foods and sports.
 
 ## 🛠️ Built With
 
 - **[React](https://react.dev/)**: Frontend library for building user interfaces.
 - **[Vite](https://vitejs.dev/)**: Next-generation, lightning-fast frontend tooling.
 - **[Lucide React](https://lucide.dev/)**: Beautiful, crisp, and customizable vector icons.
-- **Vanilla CSS**: Custom styling architecture utilizing CSS variables for dynamic theming, modern layout principles (Flexbox/Grid), and keyframe animations.
+- **Vanilla CSS**: Custom styling architecture utilizing CSS variables for dynamic theming, modern layout principles, and keyframe animations.
 
 ## ⚙️ Getting Started
 
@@ -31,7 +31,7 @@ You need to have Node.js installed on your machine.
 1. Clone the repository or extract the project files.
 2. Open your terminal and navigate to the project directory:
    ```bash
-   cd ashwath_portfolio
+   cd ramesh_portfolio
    ```
 3. Install the dependencies:
    ```bash
@@ -45,7 +45,7 @@ To start the development server, run:
 npm run dev
 ```
 
-Open [http://localhost:5173/](http://localhost:5173/) in your browser to view the application. The page will reload if you make edits.
+Open [http://localhost:5173/](http://localhost:5173/) in your browser to view the application. The page will reload automatically if you make edits.
 
 ### Building for Production
 
@@ -57,6 +57,7 @@ This will generate a `dist` folder containing the compiled assets ready for depl
 
 ## 👤 Author
 
-- GitHub: [@Ashwathaz](https://github.com/Ashwathaz)
-- LinkedIn: [Ashwath Ram](https://www.linkedin.com/in/ashz3003/)
-- Instagram: [@ig._ashz](https://instagram.com/ig._ashz)
+- **Name**: R Ramesh Khanna
+- **LinkedIn**: [R Ramesh Khanna](https://www.linkedin.com/in/rameshkhannar/)
+- **Instagram**: [@relaxed_rafaa](https://www.instagram.com/relaxed_rafaa?igsh=MWl4djZ1cGN5cDd1aQ==)
+- **Email**: [rameshkhanna06.r@gmail.com](mailto:rameshkhanna06.r@gmail.com)
