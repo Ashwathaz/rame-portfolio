@@ -1,63 +1,76 @@
-# R Ramesh Khanna - Personal & Professional Portfolio
+# R Ramesh Khanna - Technical Support Portfolio
 
-A dynamic, dual-themed portfolio built with React and Vite. It features a sleek "Professional" mode highlighting experience as a Technical Support Associate and a "Personal" mode dedicated to hobbies, gaming, and lifestyle.
+A professional portfolio highlighting experience as a Technical Support Associate, featuring work history, technical skills, and core competencies. Built with React and Vite.
 
 ## 🚀 Features
 
-- **Dual-Theme Design**: Toggle seamlessly between a Professional profile and a Personal space.
+- **Professional Showcase**: Full display of technical support experience, skills (AWS, Cloud, Problem Solving), and projects.
 - **Interactive UI**: Responsive layouts, custom CSS animations, and smooth transitions.
-- **Professional Showcase**: Display of technical support experience, skills (AWS, Cloud, Problem Solving), and projects.
-- **Personal Gallery**: A life-captured image layout linked to Instagram.
-- **Gaming & Hobbies**: Track epic gaming milestones (Valorant, Elden Ring) and personal interests like favorite foods and sports.
+- **Containerized**: Ready for production deployment using Docker and Nginx.
 
 ## 🛠️ Built With
 
 - **[React](https://react.dev/)**: Frontend library for building user interfaces.
 - **[Vite](https://vitejs.dev/)**: Next-generation, lightning-fast frontend tooling.
 - **[Lucide React](https://lucide.dev/)**: Beautiful, crisp, and customizable vector icons.
-- **Vanilla CSS**: Custom styling architecture utilizing CSS variables for dynamic theming, modern layout principles, and keyframe animations.
+- **Docker & Nginx**: Built-in containerization for high-performance production serving.
 
-## ⚙️ Getting Started
+## 🌩️ Deployment (After Launching an EC2/Linux Instance)
 
-To get a local copy up and running, follow these simple steps.
+Once you have launched a cloud instance (like an AWS EC2 Ubuntu instance), connect to it via SSH and follow these instructions to deploy the portfolio.
+
+### 1. Update System & Install Git
+```bash
+sudo apt-get update -y
+sudo apt-get install git -y
+```
+
+### 2. Install Docker & Docker Compose
+```bash
+# Install Docker
+sudo apt-get install docker.io -y
+
+# Start and enable Docker service
+sudo systemctl start docker
+sudo systemctl enable docker
+
+# Install Docker Compose plugin
+sudo apt-get install docker-compose -y
+```
+
+### 3. Clone Repository & Deploy
+```bash
+# Clone your repository (Replace the URL with your actual Git repo URL)
+git clone <YOUR_GITHUB_REPO_URL>
+cd ramesh_portfolio
+
+# Build and start the container in the background
+sudo docker-compose up -d --build
+```
+
+**Note:** Ensure that the Security Group for your instance allows Inbound traffic on **HTTP (Port 80)**. Once the container is running and port 80 is open, you can view your deployed portfolio by typing your instance's Public IPv4 address into your browser.
+
+## ⚙️ Local Development
 
 ### Prerequisites
+- [Node.js](https://nodejs.org/) (v16 or higher)
 
-You need to have Node.js installed on your machine.
-- [Node.js](https://nodejs.org/) (v16 or higher recommended)
-
-### Installation
-
-1. Clone the repository or extract the project files.
-2. Open your terminal and navigate to the project directory:
+### Running Locally
+1. Clone the repository and navigate to the project directory:
    ```bash
    cd ramesh_portfolio
    ```
-3. Install the dependencies:
+2. Install the dependencies:
    ```bash
    npm install
    ```
-
-### Running Locally
-
-To start the development server, run:
-```bash
-npm run dev
-```
-
-Open [http://localhost:5173/](http://localhost:5173/) in your browser to view the application. The page will reload automatically if you make edits.
-
-### Building for Production
-
-To create an optimized production build, run:
-```bash
-npm run build
-```
-This will generate a `dist` folder containing the compiled assets ready for deployment.
+3. Start the Vite development server:
+   ```bash
+   npm run dev
+   ```
 
 ## 👤 Author
 
 - **Name**: R Ramesh Khanna
 - **LinkedIn**: [R Ramesh Khanna](https://www.linkedin.com/in/rameshkhannar/)
-- **Instagram**: [@relaxed_rafaa](https://www.instagram.com/relaxed_rafaa?igsh=MWl4djZ1cGN5cDd1aQ==)
 - **Email**: [rameshkhanna06.r@gmail.com](mailto:rameshkhanna06.r@gmail.com)
